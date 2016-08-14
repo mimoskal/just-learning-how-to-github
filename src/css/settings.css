@@ -1,3 +1,7 @@
+body {
+  background: red;
+}
+
 body .test {
   -webkit-border-radius: 50%;
   border-radius: 50%;
