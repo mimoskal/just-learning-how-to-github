@@ -2,6 +2,7 @@ body {
 	font-family: $font;
 	font-size: 16px;
 	line-height: 2em;
+	color: $colorMainText;
 }
 
 .container {
@@ -16,9 +17,46 @@ p {
 	margin-bottom: $lineMargin;
 }
 
+ul, ol {
+	margin-bottom: $lineMargin;
+	padding-left: 1.5em;
+	ul, ol {
+		margin-bottom: 0;
+	}
+}
+
+a {
+	color: $colorLink;
+	&:hover {
+		color: $colorLinkHover;
+	}
+}
+
+nav {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			margin-right: 1em;
+		}
+	}
+}
+
+blockquote {
+	border-left: 0.5em solid $colorLight;
+	padding-left: 1em;
+}
+
+hr {
+	border: 1px solid $colorLight;
+	margin: 2em 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
-	margin-bottom: $lineMargin / 2;
+	margin-bottom: 1rem;
 	margin-top: 2rem;
 	line-height: 1.5em;
 }

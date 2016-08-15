@@ -5,6 +5,7 @@
 	** clear folders
 		del = require('del')
 	** .coffee
+	** images
 */
 
 // Include gulp
